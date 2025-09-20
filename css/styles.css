@@ -1351,6 +1351,10 @@ color: #ffffff;
     font-weight: 500;
   }
 
+  .feature-text {
+    font-weight: 400;
+  }
+
   .gallery-list {
     gap: 24px;
     row-gap: 48px;
