@@ -931,6 +931,7 @@ color: #ffffff;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu-close {
@@ -966,13 +967,16 @@ color: #ffffff;
 }
 
 .mobile-menu-nav {
-  margin-bottom: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .mobile-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -1005,8 +1009,12 @@ color: #ffffff;
   margin: 0;
 }
 
-.mobile-menu-contacts-item:not(:last-child) {
+.mobile-menu-contacts-item:first-child {
   margin-bottom: 24px;
+}
+
+.mobile-menu-contacts-item:last-child {
+  margin-bottom: 0;
 }
 
 .mobile-menu-contacts-link {
@@ -1038,6 +1046,7 @@ color: #ffffff;
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: flex-start;
 }
 
 .mobile-menu-socials-link {
@@ -1086,6 +1095,20 @@ color: #ffffff;
     display: flex;
   }
 
+  /* Mobile Menu Responsive */
+  .mobile-menu-socials-list {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 400px) {
+    .mobile-menu-socials-list {
+      gap: 56px;
+      justify-content: flex-start;
+    }
+  }
+
   /* Hero Mobile */
   .hero-section {
     padding: 72px 0;
@@ -1118,6 +1141,12 @@ color: #ffffff;
     font-weight: 700;
     line-height: 1.11;
     text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .feature-text {
+    text-align: center;
+    font-weight: 500;
   }
 
   /* Gallery Mobile */
@@ -1180,6 +1209,10 @@ color: #ffffff;
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .nav-list {
     display: flex;
   }
@@ -1212,11 +1245,23 @@ color: #ffffff;
     width: calc((100% - 24px) / 2);
   }
 
+  .feature-icon {
+    display: none;
+  }
+
   .feature-title {
     text-align: left;
-    font-size: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    margin-bottom: 8px;
+  }
+
+  .feature-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
     font-weight: 500;
-    line-height: 1.2;
   }
 
   .gallery-list {
