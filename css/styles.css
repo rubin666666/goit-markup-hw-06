@@ -1112,7 +1112,7 @@ color: #ffffff;
   /* Hero Mobile */
   .hero-section {
     padding: 72px 0;
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .hero-title {
@@ -1227,7 +1227,7 @@ color: #ffffff;
   }
 
   .hero-section {
-    max-width: 768px;
+    max-width: 100%;
   }
 
   .hero-title {
